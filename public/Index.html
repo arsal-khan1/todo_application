@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        text-align: center;
+        background-image: url(https://cdn.wallpaperhub.app/cloudcache/7/4/f/3/d/5/74f3d51cbec9db78da32e103de1b28538af1b76a.jpg);
+    }
+    .btn{
+        background-color: blueviolet;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+    }
+    .container{
+        background: brown;
+        margin-left: 30%;
+        margin-right: 30%;
+        height: 500px;
+        border: 20px;
+        border-radius: 10px;   
+    }
+    .button button{
+        margin-top: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+        background-color: darkblue;
+    }
+    input{
+        width: 220px;
+    }
+    
+    ul{
+        list-style-type: none;
+    }
+    h1{
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+    }
+</style>
+<body>
+    <h1>TODO APP</h1>
+    <div class="container">
+        <br>
+        <br>
+        <input  placeholder="Enter ToDo" type="text" id="todo-item">
+        <div class="button">
+        <button onclick="addTodo()">ADD ITEM</button>
+        <button onclick="deleteAll()">DELETE ALL</button>
+    </div>
+    
+    <div>
+        <ul id="list">
+            
+        </ul>
+    </div>
+</div> 
+</body>
+<script src="app.js"></script>
+</html>
